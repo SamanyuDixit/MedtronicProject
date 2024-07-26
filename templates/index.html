@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knee Recovery Predictor</title>
+</head>
+<body>
+    <h1>Knee Function Recovery Score Predictor</h1>
+    <form action="/predict" method="post">
+        <label for="knee_ext_1_wk">Week 1 Extension Angle:</label>
+        <input type="text" name="knee_ext_1_wk"><br>
+
+        <label for="knee_ext_2_wk">Week 2 Extension Angle:</label>
+        <input type="text" name="knee_ext_2_wk"><br>
+
+        <label for="knee_ext_4_wk">Week 4 Extension Angle:</label>
+        <input type="text" name="knee_ext_4_wk"><br>
+
+        <label for="knee_ext_8_wk">Week 8 Extension Angle:</label>
+        <input type="text" name="knee_ext_8_wk"><br>
+
+        <label for="knee_ext_12_wk">Week 12 Extension Angle:</label>
+        <input type="text" name="knee_ext_12_wk"><br>
+
+        <label for="knee_ext_24_wk">Week 24 Extension Angle:</label>
+        <input type="text" name="knee_ext_24_wk"><br>
+
+        <label for="knee_flx_1_wk">Week 1 Flexion Angle:</label>
+        <input type="text" name="knee_flx_1_wk"><br>
+
+        <label for="knee_flx_2_wk">Week 2 Flexion Angle:</label>
+        <input type="text" name="knee_flx_2_wk"><br>
+
+        <label for="knee_flx_4_wk">Week 4 Flexion Angle:</label>
+        <input type="text" name="knee_flx_4_wk"><br>
+
+        <label for="knee_flx_8_wk">Week 8 Flexion Angle:</label>
+        <input type="text" name="knee_flx_8_wk"><br>
+
+        <label for="knee_flx_12_wk">Week 12 Flexion Angle:</label>
+        <input type="text" name="knee_flx_12_wk"><br>
+
+        <label for="knee_flx_24_wk">Week 24 Flexion Angle:</label>
+        <input type="text" name="knee_flx_24_wk"><br>
+
+        <label for="kin_180_acl_recon_4_wk">180°/s ACL Reconstruction Strength at Week 4:</label>
+        <input type="text" name="kin_180_acl_recon_4_wk"><br>
+
+        <label for="kin_180_acl_recon_8_wk">180°/s ACL Reconstruction Strength at Week 8:</label>
+        <input type="text" name="kin_180_acl_recon_8_wk"><br>
+
+        <label for="kin_180_acl_recon_12_wk">180°/s ACL Reconstruction Strength at Week 12:</label>
+        <input type="text" name="kin_180_acl_recon_12_wk"><br>
+
+        <label for="kin_180_acl_recon_24_wk">180°/s ACL Reconstruction Strength at Week 24:</label>
+        <input type="text" name="kin_180_acl_recon_24_wk"><br>
+
+        <label for="kin_60_acl_recon_4_wk">60°/s ACL Reconstruction Strength at Week 4:</label>
+        <input type="text" name="kin_60_acl_recon_4_wk"><br>
+
+        <label for="kin_60_acl_recon_8_wk">60°/s ACL Reconstruction Strength at Week 8:</label>
+        <input type="text" name="kin_60_acl_recon_8_wk"><br>
+
+        <label for="kin_60_acl_recon_12_wk">60°/s ACL Reconstruction Strength at Week 12:</label>
+        <input type="text" name="kin_60_acl_recon_12_wk"><br>
+
+        <label for="kin_60_acl_recon_24_wk">60°/s ACL Reconstruction Strength at Week 24:</label>
+        <input type="text" name="kin_60_acl_recon_24_wk"><br>
+
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+    <h2>{{ manual_score_text }}</h2>
+
+</body>
+</html>
